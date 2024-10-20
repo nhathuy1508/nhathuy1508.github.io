@@ -1,0 +1,121 @@
+/*CODE BY HUYKAISER | ADMIN : NGUYỄN VĂN HUY ( HUYKAISER) | FACEBOOK : https://www.facebook.com/HuyKaiser.profile | TELEGRAM : @huykaiserOwO*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #3a6186 0%, #89253e 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #ffeb3b;
+  font-size: 40px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+p {
+  color: #ddd;
+  font-size: 20px;
+  margin-top: 15px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.heart {
+  color: red;
+  font-size: 50px;
+  animation: pulse 1.5s infinite;
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.glow {
+  background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
+  background-size: 400%;
+  color: white;
+  animation: glow 5s ease-in-out infinite;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes glow {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  width: 70%;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.flower {
+  position: absolute;
+  font-size: 30px;
+  animation: fall linear infinite;
+  cursor: pointer;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+
+.sparkles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.sparkles div {
+  position: absolute;
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  animation: sparkle 2s infinite ease-in-out;
+}
+@keyframes sparkle {
+  0% { transform: scale(0) translateY(0); opacity: 0.5; }
+  50% { transform: scale(1) translateY(-20px); opacity: 1; }
+  100% { transform: scale(0) translateY(0); opacity: 0.5; }
+}
